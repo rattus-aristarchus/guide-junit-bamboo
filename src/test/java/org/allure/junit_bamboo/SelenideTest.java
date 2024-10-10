@@ -1,4 +1,4 @@
-package org.allure.junit5_bamboo;
+package org.allure.junit_bamboo;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;

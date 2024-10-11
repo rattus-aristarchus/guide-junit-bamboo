@@ -13,6 +13,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class SelenideTest {
 
+    private static String SELENOID_URL_LOCAL = "https://localhost:4444";
+    private static String SELENOID_URL = "http://192.168.1.11:4444";
 
     @BeforeAll
     static void setupAllureReports() {
@@ -21,7 +23,7 @@ public class SelenideTest {
 
     @BeforeAll
     static void setupSelenoid() {
-        Configuration.remote = "https://localhost:4444/wd/hub";
+        Configuration.remote = SELENOID_URL + "/wd/hub";
     }
 
     @Test
